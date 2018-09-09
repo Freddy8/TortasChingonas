@@ -4,23 +4,32 @@
     <title></title>
       <link href="../css/index.css" type="text/css" rel="stylesheet">
       <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
   <body>
     <header>
-      <div class="navi">
-        <nav>
-          <span><a>Home</a></span>
-          <span><a>Locations</a></span>
-          <span><a>About</a></span>
-          <span><a>Book An Event</a></span>
-        </nav>
+      <div class="dropdown">
+
+        <button onclick="myFunction()"
+        class="dropbtn">|||</button>
+
+          <div id="myDropdown" class="dropdown-content">
+            <a class="exit">x</a>
+            <a>Home</a>
+            <a>Locations</a>
+            <a>About</a>
+            <a>Book An Event</a>
+          </div>
       </div>
     </header>
 
-    <div>
-      <img src="tortas-menu.png"/>
-      <img src="menu.png"/>
+    <div class="menu">
+      <img src="../pics/tortas-menu2.png"/>
+      <img src="../pics/menu.png"/>
     </div>
+    <script src="../js/menu.js"></script>
   </body>
 </html>

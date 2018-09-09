@@ -1,13 +1,18 @@
 
 html {
-  height: auto;
+  height: 100%;
   width: auto;
 
-  background-color: #fab325;
-  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  margin:0;
+  padding: 0;
+
+
+  background-color: #2c2e32;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 }
+
 
 body {
   margin:0;
@@ -121,18 +126,18 @@ padding-top: 1em;
 
 
 .logo form{
-  border: .3em dashed white;
+  border: .25em dashed white;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 6.5em;
-  height: 3.2em;
+  width: 6.4em;
+  height: 3em;
 
 
   position: absolute;
   z-index: 500;
-  bottom: 10em;
-  right:8em;
+  bottom: 10.5em;
+  right:8.5em;
 
 }
 
@@ -144,6 +149,22 @@ padding-top: 1em;
 #button_text {
   color: white;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 3em;
+  font-size: 2.8em;
+  padding: .2em;
+
+}
+
+/* Menu page */
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.menu img {
+  width:100%;
+
 
 }
