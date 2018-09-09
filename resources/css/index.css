@@ -92,7 +92,7 @@ body {
 .show {display:block;}
 
 .torta2{
-padding-top: 10%;
+padding-top: 5%;
 }
 
 .torta2 img {
@@ -102,8 +102,8 @@ padding-top: 10%;
 
 .torta img {
   position: absolute;
-  width: 90%;
-  height: 40%;
+  width: 85%;
+  height: 38%;
   z-index: 0;
   bottom: 0;
   right:0;
@@ -112,20 +112,18 @@ padding-top: 10%;
 
 .logo img{
   position: absolute;
-  width:60%;
-  height: 45%;
+  width:68%;
+  height: 50%;
   z-index: 100;
-  top:8%;
+  top:7%;
   right:15%;
 }
 
 .logo button{
       position: absolute;
       z-index: 500;
-      width: 50%;
-      height: 50%;
       bottom: 34%;
-      right:25%;
+      right:30%;
     }
 
 .logo {
@@ -141,12 +139,10 @@ padding-top: 10%;
 
 
 #menu_button button{
-
   border: .4em dashed white;
   outline: none;
-  margin: 1%;
-  width: 38%;
-  height: 11%;
+  width: 14em;
+  height: 6.5em;
   background: rgba(76, 175, 80, 0);
 
 }
