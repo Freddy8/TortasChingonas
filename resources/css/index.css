@@ -68,7 +68,7 @@ body {
 }
 
 .exit {
-  font-size: 1.2em;;
+  font-size: 1em;;
   position: absolute;
   top: 0;
   right: 0;
@@ -118,23 +118,31 @@ padding-top: 1em;
   right:4em;
 }
 
-#menu_button button{
-  border: .4em dashed white;
-  outline: none;
-  width: 10em;
-  height: 5em;
-  background: rgba(76, 175, 80, 0);
+
+
+.logo form{
+  border: .3em dashed white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.5em;
+  height: 3.2em;
+
 
   position: absolute;
   z-index: 500;
-  bottom: 15em;
-  right:11em;
+  bottom: 10em;
+  right:8em;
 
+}
+
+.logo button {
+  background: rgba(76, 175, 80, 0);
+  border: none;
 }
 
 #button_text {
   color: white;
-  text-align: center;
   font-family: 'Fjalla One', sans-serif;
   font-size: 3em;
 
