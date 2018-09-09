@@ -68,8 +68,7 @@ body {
 }
 
 .exit {
-  font-size: 1.8em;;
-  float: right;
+  font-size: 1.2em;;
   position: absolute;
   top: 0;
   right: 0;
@@ -103,7 +102,7 @@ padding-top: 1em;
 .torta img {
   position: absolute;
   width: 22em;
-  height: auto;
+  height: 18em;
   z-index: 0;
   bottom: 0;
   right:0;
@@ -122,14 +121,14 @@ padding-top: 1em;
 #menu_button button{
   border: .4em dashed white;
   outline: none;
-  width: 14em;
-  height: 6.5em;
+  width: 10em;
+  height: 5.5em;
   background: rgba(76, 175, 80, 0);
 
   position: absolute;
   z-index: 500;
   bottom: 15em;
-  right:12em;
+  right:11em;
 
 }
 
@@ -137,6 +136,6 @@ padding-top: 1em;
   color: white;
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 4em;
+  font-size: 3em;
 
 }
