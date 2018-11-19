@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+      <link href="../css/index.css" type="text/css" rel="stylesheet">
+      <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+    <header>
+      <div class="dropdown">
+
+        <button onclick="myFunction()"
+        class="dropbtn">|||</button>
+
+          <div id="myDropdown" class="dropdown-content">
+            <a class="exit">x</a>
+            <a href="../../index.html#Home">Home</a>
+            <a href="#Hours">Hours</a>
+            <a href="Menu.html#Menu">Menu</a>
+            <a href="#BookAnEvent">Book An Event</a>
+          </div>
+      </div>
+    </header>
+
+    <div class="press">
+      <h1 class="Weekly">"Bring a friend, as these are massive tortas!" <br><span>-LA Weekly</span></h1>
+      <h1 class="KTLA">"It is fully loaded." <br><span>-KTLA 5</span></h1>
+    </div>
+
+
+
+    <div class="booking_form" id="BookAnEvent">
+      <h1>Book Your Event</h1>
+      <p>(catering)</p>
+      <form id="Booking" method="POST" action="https://formspree.io/YOUREMAILHERE">
+        <input id= "book" type="text" name="name" placeholder="Name">
+        <input id= "book" type="number" name="phone number" placeholder="Phone number">
+        <input id= "book" type="email" name="email" placeholder="Your email">
+        <textarea id="booking_info" name="message" placeholder="Your message"></textarea>
+        <button id="send_info"  type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="locations" id="Hours">
+      <p>5630 Whittier Blvd,  <br> East L.A. <br>(562) 408-2840</p>
+      <p>7015 Somerset Blvd,  <br> Paramount <br>(626) 616-4409</p>
+      <p>13300 Valley Blvd,  <br> La Puente <br>(626) 727-0326</p>
+    </div>
+
+    <div id="calendar" >
+      <iframe
+       src="https://calendar.google.com/calendar/embed?src=contactfreddy11%40gmail.com&ctz=America%2FLos_Angeles"
+      style="border: 0" width="75%" height="300vw" frameborder="0" scrolling="no">
+      </iframe>
+    </div>
+
+    <div class="social">
+      <h1>Tell us what you think!</h1>
+      <img src="../pics/facebook.png" />
+      <img src="../pics/instagram.png" />
+      <img src="../pics/yelp.png" />
+
+    </div>
+
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

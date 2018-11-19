@@ -7,8 +7,8 @@ html {
   padding: 0;
 
 
-  background-color: #2c2e32;
-background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-color: #353535;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 }
@@ -17,7 +17,6 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.
 body {
   margin:0;
   padding: 0;
-
   height: auto;
   width: auto;
 }
@@ -86,7 +85,6 @@ body {
   text-decoration: none;
   display: block;
 
-
 }
 
 /* Change color of dropdown links on hover */
@@ -97,53 +95,81 @@ body {
 
 .torta2{
 padding-top: 1em;
+position: absolute;
 }
 
 .torta2 img {
-  height:auto;
   width: 10em;
+
 }
+
+.torta {
+  float: right;
+  width: 100%;
+}
+
 
 .torta img {
-  position: absolute;
-  width: 22.5em;
-  height: 18.8em;
-  z-index: 0;
-  bottom: 0;
-  right:0;
+  width: 78%;
+  float: right;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
 
 .logo img{
-  position: absolute;
   width:18em;
-  height: auto;
+  height: 25em;
   z-index: 100;
-  top:3em;
-  right:4em;
+  padding-top: 2em;
+
+}
+
+.locations {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: 'Fjalla One', sans-serif;
+  z-index: 100;
+  width: 100%;
+
+}
+
+.spots {
+  font-size: 8vw;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  border-bottom: 1.5px solid white;
 }
 
 
-
-.logo form{
-  border: .25em dashed white;
+#menu_button{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 6.4em;
-  height: 3em;
-
-
+  width: 100%;
+  height: 16.2vw;
+  z-index: 100;
   position: absolute;
-  z-index: 500;
-  bottom: 10.5em;
-  right:8.5em;
-
 }
 
-.logo button {
+#menu_button button {
   background: rgba(76, 175, 80, 0);
   border: none;
+  border: .25em dashed white;
 }
 
 #button_text {
@@ -151,20 +177,155 @@ padding-top: 1em;
   font-family: 'Fjalla One', sans-serif;
   font-size: 2.8em;
   padding: .2em;
-
 }
 
 /* Menu page */
-.menu{
+
+.menus{
+  display: flex;
+  flex-direction: row;
+}
+
+.pricing {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+.pricing img{
+  height:50%;
+  width: 18em;
+}
+
+.foods img{
+
+  width:8em;
+}
+
+.mask {
+  width:100%;
+  background-image: url(../pics/masks.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  border-bottom: 1.5px solid white;
+  height: 100vw;
+  color: #F02812;
+  text-shadow: -1.5px 0 white, 1.5px 0 white, 0 -1.5px white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 8vw;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Fjalla One', sans-serif;
+  color: #F02812;
+  font-size: 2.5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.social2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Fjalla One', sans-serif;
+  color: #F02812;
+  font-size: 2.5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+/*book event page */
+
+.press {
+  width: 100%;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 4vw;
+  background-image: url("../pics/luchador.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  height: 100vw;
+  padding-top: 15vw;
+  border-bottom: 1.5px solid white;
+}
+
+.press span {
+  color: white;
+}
+
+.Weekly {
+  color: #F02812;
+  float: left;
+  padding-left: 1vw;
+}
+
+.KTLA{
+  color: #F02812;
+  padding-top: 10vw;
+  float: right;
+}
+
+
+#calendar {
+  padding-top: 3vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* formspree */
+
+.booking_form h1 {
+  font-size: 12vw;
+  margin-bottom: 0;
+  padding-top: 12vw;
+}
+
+.booking_form p {
+  font-size: 10vw;
+  margin-top: 0;
 
 }
 
-.menu img {
-  width:100%;
+.booking_form {
+width: 100%;
+color: #F02812;
+font-family: 'Fjalla One', sans-serif;
+font-size: 5vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
 
+#Booking input, textarea{
+  margin: 5vw;
+}
 
+#book{
+display: block;
+width: 36vw;
+height: 6vw;
+}
+
+#booking_info {
+  diplay: block;
+  height:20vw;
+  width: 70vw;
+}
+
+#send_info {
+  display: block;
+  float: right;
+  margin-right: 14%;
 }
