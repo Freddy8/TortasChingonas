@@ -7,9 +7,10 @@ html {
   padding: 0;
 
 
-  background-color: #353535;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #525252;
+  background-image: url("../pics/asfalt-dark.png");
+  background-position: center;
+  background-size:  cover;
 
 }
 
@@ -131,32 +132,9 @@ position: absolute;
 
 }
 
-.locations {
-  display: flex;
-  color: white;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.1em;
-  font-family: 'Fjalla One', sans-serif;
-  z-index: 100;
-  width: 100%;
-
-}
-
-.spots {
-  font-size: 8vw;
-  display: flex;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Fjalla One', sans-serif;
-  border-bottom: 1.5px solid white;
-}
-
 
 #menu_button{
+  padding-top: 2.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,6 +162,7 @@ position: absolute;
 .menus{
   display: flex;
   flex-direction: row;
+  border-top: 1.5px solid white;
 }
 
 .pricing {
@@ -202,21 +181,83 @@ position: absolute;
 }
 
 .mask {
-  width:100%;
-  background-image: url(../pics/masks.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:  cover;
-  border-bottom: 1.5px solid white;
+  position: absolute;
+
+}
+
+.mask img {
+  z-index: 0;
   height: 100vw;
-  color: #F02812;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  opacity: 0.5;
+  border-bottom: 1.5px solid white;
+}
+
+.mask_text {
+  height: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask_text h1 {
+  position: absolute;
   text-shadow: -1.5px 0 white, 1.5px 0 white, 0 -1.5px white;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 8vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #F02812;
+  width:100%;
+  font-size: 4.5em;
+
 }
+
+.trucks {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: 'Fjalla One', sans-serif;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.locations {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.resturant {
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  display: flex;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+.resturant p {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 2.4em;
+}
+
 
 .social {
   width: 100%;
@@ -243,6 +284,18 @@ position: absolute;
 }
 
 /*book event page */
+
+.resturants {
+  width: 100%;
+  display: flex;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2.5em;
+}
 
 .press {
   width: 100%;
