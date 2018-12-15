@@ -2,16 +2,12 @@
 html {
   height: 100%;
   width: auto;
-
   margin:0;
   padding: 0;
-
-
   background-color: #4d4d4d;
   background-image: url("../pics/asfalt-dark.png");
   background-position: center;
   background-size:  cover;
-
 }
 
 
@@ -31,7 +27,6 @@ body {
   transform: rotate(90deg);
   font-size: 100%;
   padding: 3%;
-
   border: none;
   cursor: pointer;
   position: absolute;
@@ -100,8 +95,7 @@ position: absolute;
 }
 
 .torta2 img {
-  width: 10em;
-
+  width: 60vw;
 }
 
 .torta {
@@ -111,7 +105,7 @@ position: absolute;
 
 
 .torta img {
-  width: 78%;
+  width: 60vw;
   float: right;
 }
 
@@ -157,63 +151,58 @@ position: absolute;
   padding: .2em;
 }
 
-/* Menu page */
-
-.menus{
+.locations {
+  width: 100%;
+  color: white;
   display: flex;
   flex-direction: row;
-  border-top: 1.5px solid white;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
 }
 
-.pricing {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.pricing img{
-  height:50%;
-  width: 18em;
-}
+/* Menu page */
 
-.foods img{
 
-  width:8em;
-}
 
-.mask {
-  position: absolute;
-
+.chingon {
+  height: 100vw;
+  width: 100%;
+  opacity: none;
+  border-bottom: 2px solid #EB7E83;
 }
 
 .mask img {
+  position: absolute;
   z-index: 0;
   height: 100vw;
   width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 0;
   opacity: 0.5;
-  border-bottom: 1.5px solid white;
 }
 
+
 .mask_text {
-  height: 100vw;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  z-index: 100;
 }
 
 .mask_text h1 {
-  position: absolute;
-  text-shadow: -1.5px 0 white, 1.5px 0 white, 0 -1.5px white;
+  width: 100%;
+  text-shadow: -2px 0 #EB7E83, 2px 0 #EB7E83, 0 -2px #EB7E83;
   font-family: 'Fjalla One', sans-serif;
-  color: #F02812;
-  width:100%;
-  font-size: 4.5em;
-
-}
+  color: #D01D23;
+  font-size: 20vw;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  }
 
 .trucks {
   display: flex;
@@ -228,16 +217,6 @@ position: absolute;
   padding-bottom: 0;
 }
 
-.locations {
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Fjalla One', sans-serif;
-}
-
 .resturant {
   width: 100%;
   padding-top: 0;
@@ -249,13 +228,40 @@ position: absolute;
   justify-content: center;
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
-
+  border-bottom: 2px solid #EB7E83;
 }
 
 .resturant p {
   padding-top: 0;
   margin-top: 0;
   font-size: 2.4em;
+
+}
+
+.menus{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+
+}
+.pricing img{
+  width: 62vw;
+  height: 50%;
+}
+
+.foods {
+  display: flex;
+  flex-direction: column;
+}
+
+.foods img{
+  width:32vw;
 }
 
 
@@ -271,17 +277,7 @@ position: absolute;
   padding-bottom: 5vw;
 }
 
-.social2 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: 'Fjalla One', sans-serif;
-  color: #F02812;
-  font-size: 2.5vw;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-}
+
 
 /*book event page */
 
@@ -300,14 +296,15 @@ position: absolute;
 .press {
   width: 100%;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 4vw;
+  font-size: 3.8vw;
   background-image: url("../pics/luchador.jpg");
+  background-color: #4d4d4d;
   background-position: center;
   background-repeat: no-repeat;
   background-size:  cover;
-  height: 100vw;
+  height: 80vw;
   padding-top: 15vw;
-  border-bottom: 1.5px solid white;
+  border-bottom: 2px solid white;
 }
 
 .press span {
@@ -326,26 +323,16 @@ position: absolute;
   float: right;
 }
 
-
-#calendar {
-  padding-top: 3vw;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* formspree */
 
 .booking_form h1 {
-  font-size: 12vw;
+  font-size: 11vw;
   margin-bottom: 0;
   padding-top: 12vw;
 }
 
 .booking_form p {
-  font-size: 10vw;
+  font-size: 9vw;
   margin-top: 0;
 
 }
@@ -363,22 +350,439 @@ flex-direction: column;
 
 #Booking input, textarea{
   margin: 5vw;
+  border: 2px solid #EB7E83;
+
+}
+
+.booking-input {
+  border: 2px solid #EB7E83;
+  padding: 1vw;
 }
 
 #book{
 display: block;
-width: 36vw;
-height: 6vw;
+width: 33vw;
+height: 5.5vw;
 }
 
 #booking_info {
   diplay: block;
-  height:20vw;
-  width: 70vw;
+  height:18vw;
+  width: 68vw;
 }
 
 #send_info {
   display: block;
   float: right;
   margin-right: 14%;
+}
+
+.cubana {
+  width: 100%;
+  position: fixed;
+  top:15%;
+  z-index: -5;
+  opacity: 0.8;
+}
+
+.cubana img {
+  width: 100vw;
+
+}
+
+
+#calendar {
+  padding-top: 3vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-resturants {
+  color: white;
+  font-size: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width:100%;
+}
+
+@media only screen and (min-width: 650px) {
+
+  .dropbtn {
+    display: none;
+  }
+
+  .dropdown-content .exit {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+    width: 100%;
+    background-color: #D01D23;
+    position: relative;
+    justify-content: space-around;
+    align-items:center;
+    padding: 0;
+  }
+
+
+  .dropdown-content a {
+    color: white;
+
+  }
+
+  .dropdown-content a:hover {background-color: #EB7E83 }
+
+  .torta2{
+  padding-top: 6em;
+  float: left;
+
+  }
+
+  .torta2 img {
+    width: 50vw;
+  }
+
+  .torta {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+  }
+
+  .torta img {
+    width: 36vw;
+  }
+
+.logo {
+  position: absolute;
+  z-index: 100;
+}
+
+  .logo img{
+    width: 26em;
+    height: 34em;
+    padding-top: 5em;
+  }
+
+  .locations {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    font-size: 2em;
+  }
+
+  #menu_button {
+    display: none;
+  }
+
+  /* Desk top Menu page */
+
+
+.chingon {
+  height:35em;
+  width: 100%;
+  opacity: none;
+  border-bottom: 5px solid #EB7E83;
+}
+
+.mask img {
+  position: absolute;
+  height: 35em;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.mask_text {
+  padding-top: 2vw;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.mask_text h1 {
+  text-shadow: -2px 0 #EB7E83, 2px 0 #EB7E83, 0 -2px #EB7E83;
+  font-family: 'Fjalla One', sans-serif;
+  color: #D01D23;
+  font-size: 9vw;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+.delivery {
+  z-index: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: : center;
+  font-family: 'Fjalla One', sans-serif;
+  }
+
+
+.trucks {
+  color: white;
+  flex-direction: row;
+  font-size: 1.8em;
+  font-family: 'Fjalla One', sans-serif;
+  width: 100%;
+  margin: none;
+  padding: none;
+  }
+
+.resturant {
+  width: 100%;
+  padding: none;
+  margin: none;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  border: none;
+  }
+
+.resturant p {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 2.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.menus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid #EB7E83;
+  }
+
+.foods {
+  border-left: 3px solid #EB7E83;
+  border-right: 2vw solid #EB7E83;
+  }
+
+.pricing img{
+  width: 40vw;
+  }
+
+.foods img{
+  display: flex;
+  align-items: center;
+  width:24vw;
+  }
+
+
+.social {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Fjalla One', sans-serif;
+  color: #F02812;
+  font-size: 2.5vw;
+
+  }
+
+.social img {
+  width: 6vw;
+  }
+
+  /*Desktop - book event page */
+
+  .press {
+    width: 100%;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2vw;
+    background-image: url("../pics/luchador.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    border-bottom: 1.5px solid white;
+    height: 60vw;
+    padding-top: 12vw;
+  }
+
+  .cubana {
+    top:2%;
+  }
+
+
+  .press span {
+    color: white;
+  }
+
+  .Weekly {
+    color: #F02812;
+    padding-left: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    float: left;
+  }
+
+  .KTLA{
+    color: #F02812;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    float: right;
+
+  }
+
+  #calendar {
+    padding-top: 3vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* formspree */
+
+  .booking_form h1 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    padding-top: 1em;
+  }
+
+  .booking_form p {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  .booking_form {
+  width: 100%;
+  color: #F02812;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  }
+
+  .booking-input {
+    border: 4px solid #EB7E83;
+    padding: 10px;
+  }
+
+  #Booking input, textarea{
+    margin: 1.5em;
+    border: 2px solid #EB7E83;
+  }
+
+  #book{
+  display: block;
+  width: 14em;
+  height: 2.5em;
+  }
+
+  #booking_info {
+    diplay: block;
+    height:20em;
+    width: 40em;
+  }
+
+  #send_info {
+    display: block;
+    float: right;
+    margin-right: 14%;
+  }
+
+  .book-resturants {
+    font-size: 3.9vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+
+}
+
+@media only screen and (min-width: 1050px) {
+
+  .cubana {
+    position: absolute;
+    top: 140%;
+  }
+
+
+.press {
+
+  height: 35vw;
+  font-size: 1.8vw;
+}
+
+
+
+.desktop-row {
+  padding-top: 3vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+  .book-resturants {
+    display: block;
+    text-align: center;
+    font-size: 2.5vw;
+    display: block;
+    width:100%;
+  }
+
+  .booking_form h1 {
+    font-size: 1.2em;
+  }
+
+  .booking_form p {
+    font-size: .9em;
+  }
+
+  .social {
+    width: 100%;
+    font-size: 1.5vw;
+    padding-top: 4vw;
+    padding-bottom: .5vw;
+    display: flex;
+    justify-content: flex-start;
+    }
+
+    .social h1 {
+      padding-left: 1.2vw;
+    }
+
+    .social img {
+      width: 3vw;
+      margin: 1vw;
+      }
+
 }
