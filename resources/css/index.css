@@ -1,6 +1,6 @@
 
 html {
-  height: 100%;
+  height: auto;
   width: auto;
   margin:0;
   padding: 0;
@@ -53,8 +53,8 @@ body {
 
 /* Dropdon Content (Hidden by default) */
 .dropdown-content {
-  font-size: 1.5em;
-  padding-top:50%;
+  font-size: 2em;
+  padding-top:40%;
   width: 100%;
   height: 100%;
   display: none;
@@ -68,7 +68,7 @@ body {
 }
 
 .exit {
-  font-size: 1em;;
+  font-size: 1em;
   position: absolute;
   top: 0;
   right: 0;
@@ -89,29 +89,46 @@ body {
 /* Show the dropdown menu ( use JS to add this class to the drop down - content container when the user clicks on the dropdown button_text) */
 .show {display:block;}
 
-.torta2{
-padding-top: 1em;
+
+.home_column {
+  padding-top: 15vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.torta2 {
 position: absolute;
+width: 100%;
+top: .5%;
 }
 
 .torta2 img {
-  width: 60vw;
+  width: 70%;
 }
 
 .torta {
-  float: right;
   width: 100%;
+  z-index: 0;
+  display: flex;
+  align-items:stretch;
+  justify-content: flex-end;
+
 }
 
 
 .torta img {
-  width: 60vw;
-  float: right;
+  display: flex;
+  align-items:stretch;
+  justify-content: flex-end;
+  width: 70%;
+  height: 100%;
 }
+
 
 .logo {
   display: flex;
-  flex-direction: column;
   width:100%;
   align-items: center;
   justify-content: center;
@@ -119,39 +136,40 @@ position: absolute;
 }
 
 .logo img{
-  width:18em;
-  height: 25em;
+  width:70%;
   z-index: 100;
-  padding-top: 2em;
-
 }
 
-
 #menu_button{
-  padding-top: 2.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 16.2vw;
+  height: 100%;
   z-index: 100;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #menu_button button {
   background: rgba(76, 175, 80, 0);
   border: none;
-  border: .25em dashed white;
+  border: .8vw dashed white;
+  position: absolute;
+  margin-top: 20vw;
 }
 
 #button_text {
   color: white;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 2.8em;
-  padding: .2em;
+  font-size: 8vw;
+  text-align: center;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 .locations {
+  font-size: 4vw;
   width: 100%;
   color: white;
   display: flex;
@@ -159,6 +177,7 @@ position: absolute;
   justify-content: center;
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
+  z-index: 100;
 }
 
 /* Menu page */
@@ -269,13 +288,15 @@ position: absolute;
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   font-family: 'Fjalla One', sans-serif;
   color: #F02812;
   font-size: 2.5vw;
   padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-bottom: 2vw;
 }
+
 
 
 
@@ -411,7 +432,7 @@ height: 5.5vw;
   width:100%;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 780px) {
 
   .dropbtn {
     display: none;
@@ -431,7 +452,6 @@ height: 5.5vw;
     padding: 0;
   }
 
-
   .dropdown-content a {
     color: white;
 
@@ -439,48 +459,59 @@ height: 5.5vw;
 
   .dropdown-content a:hover {background-color: #EB7E83 }
 
-  .torta2{
-  padding-top: 6em;
-  float: left;
+  .home_column {
+    padding-top: 0;
+  }
 
+  .torta2{
+  float: left;
+  top: 12%;
+  margin-top: 2%;
+  position: relative;
   }
 
   .torta2 img {
-    width: 50vw;
+    width: 42%;
+    position: absolute;
   }
 
   .torta {
-    height: 100%;
+    margin-top: 17%;
+    position:relative;
+    z-index: 0;
+    width: 100%;
+    height: auto;
     display: flex;
-    align-items: flex-end;
     justify-content: flex-end;
-    position: absolute;
+    align-items: flex-end;
   }
 
   .torta img {
-    width: 36vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 0;
+    position: absolute;
+    width: 40%;
+    height: auto;
   }
 
-.logo {
-  position: absolute;
-  z-index: 100;
-}
+  .logo {
+    padding-top: 8%;
+  }
 
   .logo img{
-    width: 26em;
-    height: 34em;
-    padding-top: 5em;
+    width: 38%;
   }
 
   .locations {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100%;
     width: 100%;
-    position: absolute;
     z-index: 100;
-    font-size: 2em;
+    font-size: none;
+  }
+
+  .locations p {
+    font-size: 73%;
   }
 
   #menu_button {
@@ -727,6 +758,42 @@ height: 5.5vw;
 }
 
 @media only screen and (min-width: 1050px) {
+
+
+
+
+    .torta {
+      margin-top: 7%;
+    }
+
+    .torta img {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      bottom: 0;
+      position: absolute;
+      width: 35%;
+      height: auto;
+    }
+
+    .logo {
+      padding-top: 3%;
+    }
+
+    .logo img{
+      width: 30%;
+    }
+
+    .locations {
+      width: 100%;
+      z-index: 100;
+      font-size: none;
+    }
+
+    .locations p {
+      font-size: 64%;
+    }
+
 
   .cubana {
     position: absolute;
