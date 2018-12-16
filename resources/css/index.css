@@ -114,7 +114,6 @@ top: .5%;
   display: flex;
   align-items:stretch;
   justify-content: flex-end;
-
 }
 
 
@@ -189,6 +188,7 @@ top: .5%;
   width: 100%;
   opacity: none;
   border-bottom: 2px solid #EB7E83;
+  background-color: #4d4d4d;
 }
 
 .mask img {
@@ -262,6 +262,7 @@ top: .5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #4d4d4d;
 }
 
 .pricing {
@@ -476,8 +477,8 @@ height: 5.5vw;
   }
 
   .torta {
-    margin-top: 17%;
-    position:relative;
+    margin-top: 41%;
+    position:absolute;
     z-index: 0;
     width: 100%;
     height: auto;
@@ -490,8 +491,7 @@ height: 5.5vw;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    bottom: 0;
-    position: absolute;
+    position: relative;
     width: 40%;
     height: auto;
   }
@@ -763,15 +763,10 @@ height: 5.5vw;
 
 
     .torta {
-      margin-top: 7%;
+      margin-top: 28%;
     }
 
     .torta img {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      bottom: 0;
-      position: absolute;
       width: 35%;
       height: auto;
     }
