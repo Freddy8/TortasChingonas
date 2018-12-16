@@ -477,23 +477,23 @@ height: 5.5vw;
   }
 
   .torta {
-    margin-top: 41%;
-    position:absolute;
+
     z-index: 0;
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    position: absolute;
+    height: 100%;
+    display: block;
+    bottom: 0;
+    right: 0;
   }
 
   .torta img {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
+    display:block;
+    position: absolute;
     width: 40%;
     height: auto;
+    bottom: 0;
+    right: 0;
   }
 
   .logo {
